@@ -1,0 +1,126 @@
+h1{
+    text-align: center;
+    font-size: 30px;  
+    font-style: normal; 
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+form{
+    padding: 1em;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+form input {
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+form input[type="submit"] {
+    background: lightgrey;
+    padding: 0.7em;
+    border: 0;
+}
+form input[type="submit"]:hover {
+    background: gold;
+}
+
+label{
+    text-align: center;
+    display: inline-block;
+    padding: 0.5em 1.5em 0.5em 0;
+}
+
+input {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
+input:focus {
+    outline: 3px solid gold;
+}
+
+input[type="submit"]{
+    font-style: normal;
+}
+
+.meme_box{
+    position:relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.image{
+    width: 100%;
+}
+
+.box{
+    width: 30%;
+    position:relative;
+}
+
+
+.wrapper{
+    position: relative;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.box .topIm{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;        
+  text-align: center;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.box .bottomIm{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.icon{
+    width:40px;
+    height:40px;
+    opacity: 0;
+}
+
+.box .icon{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    text-align: center;
+}
+
+.box:hover .image{
+    opacity: 0.5;
+}
+
+.box:hover .icon{
+    opacity: 1;
+}
+
+
+
